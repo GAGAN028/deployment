@@ -8,6 +8,7 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 7777
-  type: LoadBalancer ## If your using the Nginx controller we can use the ClusterIP and Nginx controller support the multiple Endpoint. Using your ingress.yaml file
+      targetPort: 8888
+      nodePort: 30080
+  type: NodePort
 
